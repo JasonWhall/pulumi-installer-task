@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "af7fa111-9fb4-422f-be9f-95c96deaa4ea",
+    "name": "UsePulumi",
+    "friendlyName": "Pulumi Installer Task",
+    "description": "Install the Pulumi Cli into the tools directory and prepends to path",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Jason Whalley",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "version",
+            "type": "string",
+            "label": "Version",
+            "defaultValue": "latest",
+            "required": true,
+            "helpMarkDown": "The version of Pulumi Cli to install. Defaults to latest"
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "index.js"
+        }
+    }
+}

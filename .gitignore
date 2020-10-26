@@ -1,0 +1,7 @@
+node_modules
+*.vsix
+*.map
+*.log
+temp
+tools
+.taskkey

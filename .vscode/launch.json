@@ -1,0 +1,25 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Build Project",
+            "env": {
+                "AGENT_TEMPDIRECTORY": "${workspaceFolder}\\temp",
+                "AGENT_TOOLSDIRECTORY": "${workspaceFolder}\\tools",
+                "SYSTEM_DEBUG": "true"
+            },
+            "program": "${workspaceFolder}\\buildAndReleaseTask\\index.ts",
+            "preLaunchTask": "npm: build - buildAndReleaseTask",
+            "sourceMaps": true,
+            "smartStep": true,
+            "outputCapture" : "std",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
+}
