@@ -1,10 +1,10 @@
 {
   "name": "pulumi-installer-task",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Task to install Pulumi Cli",
   "main": "buildAndReleaseTask/index.js",
   "scripts": {
-    "package": "cd buildAndReleaseTask && npm run tsc && npm run bump-version && cd .. && npm run tfx-create",
+    "package": "cd buildAndReleaseTask && npm run build && npm run bump-version && cd .. && npm run tfx-create",
     "start": "cd buildAndReleaseTask && npm run build && node index.js",
     "lint": "cd buildAndReleaseTask && npm run lint",
     "tfx-create": "tfx extension create --manifest-globs vss-extension.json --rev-version"

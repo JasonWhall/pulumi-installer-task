@@ -23,7 +23,7 @@ export function getPlatform(): string {
         case "linux": platform = "linux"; break;
         case "darwin": platform = "darwin"; break;
         case "win32": platform = "windows"; break;
-        default: throw new Error('Unsupported operating system.');
+        default: throw new Error(tl.loc("Unsupported_OS"));
     }
     tl.debug(`Platform is ${platform}`);
     return platform;
@@ -32,7 +32,7 @@ export function getPlatform(): string {
 export function sanitizeVersionString(inputVersion: string): string {
     const version = tr.cleanVersion(inputVersion);
     if (!version) {
-        throw new Error('Not a valid version');
+        throw new Error(tl.loc("Invalid_Version"));
     }
     return version;
 }

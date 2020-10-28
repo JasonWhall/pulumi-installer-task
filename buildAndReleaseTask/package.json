@@ -1,13 +1,14 @@
 {
   "name": "pulumi-installer-task",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Task to install Pulumi Cli",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "prestart": "npm run build",
     "build": "tsc",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "bump-version": "vsts-bump --indent 4 task.json"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "eslint": "^7.12.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "vsts-bump": "^1.1.3"
   }
 }
