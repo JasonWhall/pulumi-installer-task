@@ -9,8 +9,8 @@
     "author": "Jason Whalley",
     "version": {
         "Major": 0,
-        "Minor": 1,
-        "Patch": 2
+        "Minor": 2,
+        "Patch": 0
     },
     "instanceNameFormat": "Install Pulumi Cli",
     "inputs": [
@@ -39,6 +39,7 @@
         "Debug_Caching": "Adding Pulumi Cli to tools directory",
         "Debug_Validating": "Validating Pulumi executable...",
         "Debug_SetPath": "Prepending '%s' to PATH variable",
-        "Debug_SetHome": "Setting PULUMI_HOME Variable: '%s'"
+        "Debug_SetHome": "Setting PULUMI_HOME Variable: '%s'",
+        "Debug_PlatformDetected": "Platform is '%s'"
     }
 }
