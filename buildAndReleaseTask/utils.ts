@@ -25,7 +25,7 @@ export function getPlatform(): string {
         case "win32": platform = "windows"; break;
         default: throw new Error(tl.loc("Unsupported_OS"));
     }
-    tl.debug(`Platform is ${platform}`);
+    tl.debug(tl.loc("Debug_PlatformDetected", platform));
     return platform;
 }
 

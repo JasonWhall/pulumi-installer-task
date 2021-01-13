@@ -19,7 +19,7 @@ export async function getPulumiVersion(): Promise<string> {
 }
 
 export async function getPulumi(version: string): Promise<string> {
-    let cachedToolPath = tr.findLocalTool("pulumi", version);
+    let cachedToolPath = tr.findLocalTool("pulumi-cli", version);
     const platform = utils.getPlatform();
         
     if (!cachedToolPath) {
@@ -35,7 +35,9 @@ export async function getPulumi(version: string): Promise<string> {
             : await tr.extractTar(downloadPath);
         
         tl.debug(tl.loc("Debug_Caching"));
-        cachedToolPath = await tr.cacheDir(extractPath, "pulumi", version);
+        cachedToolPath = await tr.cacheDir(extractPath, "pulumi-cli", version);
+
+        tl.setVariable("INSTALLED_PULUMI_VERSION", version);
     }
 
     return cachedToolPath;

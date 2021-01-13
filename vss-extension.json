@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "pulumi-installer-task",
     "name": "Pulumi Installer Task",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "publisher": "jasonwhalley",
     "targets": [
         {
