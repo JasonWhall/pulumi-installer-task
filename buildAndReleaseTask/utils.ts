@@ -1,5 +1,3 @@
-"use strict";
-
 import * as tl from "azure-pipelines-task-lib/task";
 import * as tr from 'azure-pipelines-tool-lib/tool';
 import * as path from 'path';

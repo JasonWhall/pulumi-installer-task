@@ -1,5 +1,3 @@
-"use strict";
-
 import * as tr from 'azure-pipelines-tool-lib/tool';
 import * as tl from 'azure-pipelines-task-lib/task';
 import * as path from 'path';
@@ -69,5 +67,5 @@ export async function verifyPulumiInstall(toolPath: string): Promise<void> {
 
     await tl.tool(pulumiPath)
         .arg("version")
-        .exec();
+        .execAsync();
 }

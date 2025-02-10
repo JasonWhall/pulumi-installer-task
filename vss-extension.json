@@ -2,19 +2,19 @@
     "manifestVersion": 1,
     "id": "pulumi-installer-task",
     "name": "Pulumi Installer Task",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "jasonwhalley",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
     "description": "Task for Installing Pulumi Cli.",
     "categories": [
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/extension-icon.png"        
+        "default": "images/extension-icon.png"
     },
     "files": [
         {
@@ -33,6 +33,10 @@
             }
         }
     ],
+    "branding": {
+        "color": "rgb(138, 51, 145)",
+        "theme": "dark"
+    },
     "repository": {
         "type": "git",
         "uri": "https://github.com/JasonWhall/pulumi-installer-task"
